@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,33 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+  <main class="container p-5 m-5">
+
+    <div class="row text-center">
+      <h1 class="display">Code Quiz!</h1>
+      <hr>
+      <p>Press the green button below to begin the Javascript code quiz. Every wrong answer reduces your remaining time.
+        See if you can answer every question before time runs out! You have 75 seconds.</p>
+      <p>
+        <button class="btn btn-success" id="startQuiz">Start Quiz Here!</button>
+        <button class="btn btn-primary" id="highScores">High Scores!</button>
+      </p>
+      <hr>
+    </div>
+
+    <div id="quiz" style="display:none">
+      <p id="timer"></p>
+      <h4 id="questions"></h4>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
